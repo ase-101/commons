@@ -47,6 +47,11 @@ public class MachinePostReqDto {
 	/**
 	 * Field for machine serial number
 	 */
+
+
+
+
+
 	@ApiModelProperty(value = "serialNum", required = false, dataType = "java.lang.String")
 	private String serialNum;
 	/**
@@ -54,7 +59,7 @@ public class MachinePostReqDto {
 	 */
 	@NotNull
 	@StringFormatter(min = 1, max = 64)
-	@ApiModelProperty(value = "macAddress", required = true, dataType = "java.lang.String")
+	@ApiModelProperty(value = "macAddress", required = false, dataType = "java.lang.String")
 	private String macAddress;
 	/**
 	 * Field for machine IP address
