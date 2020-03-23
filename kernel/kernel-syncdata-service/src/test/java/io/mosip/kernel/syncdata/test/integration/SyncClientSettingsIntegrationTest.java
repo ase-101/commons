@@ -798,7 +798,24 @@ public class SyncClientSettingsIntegrationTest {
 		when(signatureUtil.sign(Mockito.anyString(), Mockito.anyString())).thenReturn(signResponse);
 	}
 	
+
 		
+
+	/*
+	private String syncDataUrl = "/clientsettings?lastupdated=2018-11-01T12:10:01.021&serialnumber=NM5328114630&macAddress=e1:01:2b:c2:1d:b0&keyindex=abcd";
+	private String syncDataUrlMacAdress = "/clientsettings?macaddress=e1:01:2b:c2:1d:b0&keyindex=abcd";
+	private String syncDataUrlSerialNum = "/clientsettings?serialnumber=NM5328114630&keyindex=abcd";
+	private String syncDataUrlRegCenterId = "/clientsettings/{regcenterId}";
+	private String syncDataUrlWithoutInput = "/clientsettings";
+	private String syncDataUrlWithOnlyLastUpdated = "/clientsettings?lastupdated=2018-11-01T12:10:01.021";	
+	
+	private String syncDataUrlBasedOnRegCenterId = "/clientsettings/{regcenterId}?macaddress=e1:01:2b:c2:1d:b0&serialnumber=NM532811463&keyindex=abcd";
+	private String syncDataUrlWithoutMacAddressAndSno = "/clientsettings?keyindex=abcd";
+	
+	private String syncDataUrlWithInvalidTimestamp = "/clientsettings/{regcenterId}?lastupdated=2018-15-01T123:101:01.021Z&macaddress=00:11:22:33&keyindex=abcd";
+	*/
+	
+
 	private String syncDataUrl = "/clientsettings?lastupdated=2018-11-01T12:10:01.021Z&keyindex=abcd";	
 		
 	private String syncDataUrlWithoutInput = "/clientsettings";
