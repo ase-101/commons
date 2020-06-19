@@ -1,10 +1,10 @@
-package io.mosip.kernel.core.bioapi.model;
+package io.mosip.kernel.biosdk.provider.dto;
 
+import io.mosip.kernel.core.bioapi.model.KeyValuePair;
 import lombok.Data;
 
-/**Added for backward compatibility (0.7) */
 @Data
-public class Score {
+public class Score_0_7 {
 	
 	private float scaleScore;	  
 	private float internalScore;
