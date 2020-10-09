@@ -7856,7 +7856,7 @@ public class MasterdataIntegrationTest {
 
 			ResponseWrapper<?> responseWrapper = objectMapper.readValue(result.getResponse().getContentAsString(),
 					ResponseWrapper.class);
-						
+
 		} catch(Exception e) {
 			Assert.fail(e.getMessage());
 		}
